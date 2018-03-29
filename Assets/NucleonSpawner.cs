@@ -49,9 +49,7 @@ public class NucleonSpawner : MonoBehaviour {
 		nucs [nucCounter].followPlayer = true;
 
 		StartCoroutine(nucs [nucCounter].FollowPlayer (0.1f));
-		if (nucs [nucCounter] != null) {
-			StartCoroutine (DestroyNucleon (nucs [nucCounter].gameObject));
-		}
+		StartCoroutine (DestroyNucleon (nucs [nucCounter].gameObject));
 		if (nucCounter < nucs .Length - 1 ){
 			nucCounter++;
 		}

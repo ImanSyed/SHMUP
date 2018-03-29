@@ -12,6 +12,8 @@ public class Nucleon : MonoBehaviour {
 
 	MeshRenderer mr;
 
+	Vector3 dir;
+
 	void Awake() {
 		body = GetComponent<Rigidbody> ();
 		mr = GetComponent<MeshRenderer> ();
@@ -25,7 +27,7 @@ public class Nucleon : MonoBehaviour {
 	public IEnumerator FollowPlayer(float delay){
 		yield return new WaitForSeconds (delay);
 		Transform pc = GameObject.FindGameObjectWithTag ("Player").transform;
-		Vector3 dir = pc.position - transform.position;
+		dir = pc.position - transform.position;
 		body.AddForce (dir * 100);
 		if (followPlayer) {
 			StartCoroutine(FollowPlayer(0.1f));

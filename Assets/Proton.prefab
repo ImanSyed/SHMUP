@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 135820391646531660}
   - component: {fileID: 23886931368250372}
   - component: {fileID: 54116686163139976}
-  - component: {fileID: 114159289847030100}
   m_Layer: 0
   m_Name: Proton
   m_TagString: Finish
@@ -100,19 +99,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114159289847030100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1189592017088330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e937425ef08b18b42b8b22328f9f47c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attractionForce: 10
-  followPlayer: 1
 --- !u!135 &135820391646531660
 SphereCollider:
   m_ObjectHideFlags: 1
